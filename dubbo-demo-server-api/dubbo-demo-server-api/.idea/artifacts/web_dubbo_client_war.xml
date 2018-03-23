@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="web-dubbo-client:war">
-    <output-path>$PROJECT_DIR$/../../web-dubbo-client/web-dubbo-client/target</output-path>
-    <root id="archive" name="web-dubbo-client-${BuildTimestamp}.${svnRevision}.war">
-      <element id="artifact" artifact-name="web-dubbo-client:war exploded" />
-    </root>
-  </artifact>
-</component>

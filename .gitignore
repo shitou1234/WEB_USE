@@ -1,7 +1,7 @@
 *.iml
 *.iws
-*/.idea/
-*/target/
-*/out/
-*/overlays/
+.idea/
+target/
+out/
+overlays/
 *.log
