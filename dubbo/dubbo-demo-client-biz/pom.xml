@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.zhq.dubbo</groupId>
+  <artifactId>dubbo-demo-client-biz</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>dubbo.demo.client.biz</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <!-- 引入dubbo和zookeepr -->
+    <dependency>  
+         <groupId>com.alibaba</groupId>  
+         <artifactId>dubbo</artifactId>
+         <version>2.5.3</version>
+        <!--去除引入的spring-->
+        <exclusions>
+            <exclusion>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-context</artifactId>
+          <version>5.0.2.RELEASE</version>
+      </dependency>
+       
+      <dependency>  
+         <groupId>org.apache.zookeeper</groupId>  
+		<artifactId>zookeeper</artifactId>  
+		<version>3.4.6</version>  
+	  </dependency>  
+
+	  <dependency>  
+		<groupId>com.github.sgroschupf</groupId>  
+		<artifactId>zkclient</artifactId>  
+		<version>0.1</version>  
+	 </dependency>
+	 
+	 <!-- 引入api -->
+	 <dependency>
+    	<groupId>org.zhq.dubbo</groupId>
+		<artifactId>dubbo-demo-server-api</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+	 
+  </dependencies>
+</project>
